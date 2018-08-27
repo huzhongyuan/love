@@ -1,7 +1,12 @@
 <!--pages/my/index.wxml-->
-<view  class='header'>
+<view  class='header'  style='display:{{ isgetUserInfo ? "flex" : "none" }} '>
     <image src='{{ userInfo.avatarUrl }}' bindtap='to_personal'></image>
     <view>{{ userInfo.nickName }}</view>
+
+</view>
+
+<view class='nogetuser' style='display:{{ !isgetUserInfo ? "flex" : "none" }}' >
+  <button open-type="getUserInfo" bindgetuserinfo='getUserInfo'>授权</button>
 </view>
 
 <view class='mydonate'>

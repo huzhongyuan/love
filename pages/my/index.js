@@ -11,7 +11,8 @@ Page({
       NickName: ''
     },
     articlelist: '',
-    pullup: 'none'
+    pullup: 'none',
+    isgetUserInfo: true
   },
 
   /**
@@ -30,10 +31,16 @@ Page({
             success: function (res) {
               console.log(res);
               that.setData({
-                userInfo: res.userInfo
+                userInfo: res.userInfo,
+                isgetUserInfo: true
               })
             }
           })
+        } else {
+          that.setData({
+            isgetUserInfo: false
+          })
+          console.log(111);
         }
       }
     });
@@ -41,7 +48,29 @@ Page({
   bindGetUserInfo: function (e) {
     console.log(e.detail.userInfo)
   },
-
+  //获取授权
+  getUserInfo: function (e) {
+    var that = this
+    console.log(e)
+    if (e.detail.errMsg != "getUserInfo:fail auth deny") {
+      wx.getUserInfo({
+        success: function (res) {
+          console.log(res);
+          that.setData({
+            userInfo: res.userInfo,
+            isgetUserInfo: true
+          })
+        }
+      })
+      that.setData({
+        isgetUserInfo: true
+      })
+    } else {
+      that.setData({
+        isgetUserInfo: false
+      })
+    }
+  },
 
 //点击爱心事件
   islove: function (e) {
