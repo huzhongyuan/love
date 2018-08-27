@@ -1,0 +1,23 @@
+<view class='header'>
+  <view class='personNumber'>一共有 <text class="number">{{ personNumber }}</text>人参与</view>
+  <view class='bookNumber'>已捐出<text class="number">{{ bookNumber }}</text>本</view>
+</view>
+
+<view class='donate'>
+  <view class='black'> </view>
+  <view class='donateBook'>
+     <wxc-button   btnStyle="{{style}}" bindtap="showDialog">我要捐书</wxc-button>
+      <wxc-dialog class="wxc-dialog" confirm-text="确定" cancel-text="取消" bindconfirm="onConfirm" bindcancel="onCancel"></wxc-dialog>
+  </view>
+  <view>
+    <button class='share' open-type='share'>分享</button>
+  </view>
+</view>
+
+<!-- 我是分割线 -->
+<view class='line'></view>
+
+<!-- 文章列表 -->
+<blessinglist articlelist="{{ articlelist }}" share="none" bind:myevent="islove" bind:donateBook="donateBook"></blessinglist>
+
+<wxc-loadmore style="display: {{ pullup }}"></wxc-loadmore>

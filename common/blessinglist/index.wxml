@@ -1,0 +1,44 @@
+<!--common/blessinglist/index.wxml-->
+<view class='margin' wx:for="{{ articlelist }}" wx:key="unique" >
+<view catchtap='donateBook' data-index="{{ index }}">
+  <view class='header fc'>
+    <wxc-elip class="title">{{ item.title }}</wxc-elip>
+    <wxc-elip class='time'>{{ item.time}}</wxc-elip>
+  </view>
+  <view class='personInfo .fc' >
+    <image src='{{ item.headPortrait }}'></image>
+    <wxc-elip class='name'>{{ item.name}}</wxc-elip>
+  </view>
+  <view class='content fc'>
+     <wxc-elip class="context">{{ item.content }}</wxc-elip>
+  </view>
+  <view class='photolist'>
+     <view class="photobox">
+        <image src='{{ item }}' wx:key="unique"  wx:for = "{{ item.photolist }}"></image>
+     </view>
+  </view>
+</view>
+
+    
+    <view class='foot'>
+    <view class='black'></view>
+    <view class='sharing'>
+        <button hover-stop-propagation='true' open-type='share' style='display: {{ share }};z-index: 1'>
+        <image src='/images/icon/share.png'></image>
+        分享</button>
+    </view>
+    <view class='collect' catchtap='love' id='{{ item.id }}' data-index="{{ index }}">
+    <wxc-elip class="collectbox">
+      <view class='box'>
+            <view>收集爱心</view> 
+      <view class="lovenumber">{{ item.love }}</view>
+      <image  src="{{ item.islove? ('/images/icon/onloved.png'):('/images/icon/loved.png')}}"></image>
+ 
+      </view>
+   </wxc-elip>
+   </view>
+    </view>
+
+  <!-- 我是分割线 -->
+  <view class='line'></view>
+</view>

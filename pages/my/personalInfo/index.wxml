@@ -1,0 +1,49 @@
+<!--pages/my/personalInfo/index.wxml-->
+  <view class="list-item">
+    <view class='name box'>
+      <text class='tips'>姓名</text>
+      <input placeholder='请填写自己真实姓名' bindinput="name"></input>
+    </view>
+  <picker bindchange="changeSex" value="{{index[0]}}" range="{{arraySex}}">
+    <view class="picker box">
+      <text class='tips'>性别</text>
+      <text>{{arraySex[index[0]]}}</text>
+    </view>
+  </picker>
+  <view class='phoneNumber box'>
+      <text class='tips'>手机号码</text>
+      <input placeholder='122111441122' bindinput='phoneNumber'></input>
+  </view>
+
+    <!-- 家乡 -->
+    <picker bindchange="changeHome" value="{{index[1]}}" range="{{arrHone}}">
+    <view class="picker box">
+      <text class='tips'>家乡</text>
+      <text>{{arrHone[index[1]]}}</text>
+    </view>
+  </picker>
+
+  <!-- 所著公司 -->
+    <view class='phoneNumber box'>
+      <text class='tips'>所住公司</text>
+      <input placeholder='122111441122' bindinput='company'></input>
+  </view>
+
+  <!-- 所任职务 -->
+      <picker bindchange="changepost" value="{{index[2]}}" range="{{arrpost}}">
+    <view class="picker box">
+      <text class='tips'>所任职务</text>
+      <text>{{arrpost[index[2]]}}</text>
+    </view>
+  </picker>
+
+  <!-- 是否会员 -->
+      <view class='menber box'>
+      <text class='tips'>是否会员</text>
+      <switch checked bindchange="onCheck"/>
+  </view>
+  </view>
+
+  <view class='footer'>
+  <view class='push' bindtap='push'>确定</view>
+</view>

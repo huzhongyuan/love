@@ -1,0 +1,3 @@
+<!--pages/article/index.wxml-->
+<articlelist articlelist="{{ articlelist }}" bind:to_detail="to_detail"></articlelist>
+ <wxc-loadmore style="display: {{ pullup }}"></wxc-loadmore>

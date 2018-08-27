@@ -1,0 +1,40 @@
+/* pages/my/personalInfo/index.wxss */
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 31rpx;
+  height: 80rpx;
+  align-items: center;
+  font-size: 32rpx;
+}
+.name input{
+  opacity: 0.5;
+  float: right;
+  text-align:right;
+}
+.box input {
+    text-align:right;
+}
+.tips{
+  width: 200rpx;
+}
+
+
+.footer{
+  margin-top: 200rpx;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200rpx;
+  font-size: 32rpx;
+}
+
+.push {
+  width: 250rpx;
+  height: 90rpx;
+  background-color: #FFCD36;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

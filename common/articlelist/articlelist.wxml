@@ -1,0 +1,16 @@
+<!--common/articlelist/articlelist.wxml-->
+<view class='margin' wx:for="{{ articlelist }}" bindtap='to_detail' wx:key="unique" id='{{item.id}}' data-index="{{ index }}">
+  <view class='header fc'>
+    <wxc-elip class="title">{{ item.title }}</wxc-elip>
+    <wxc-elip class='time'>{{ item.time}}</wxc-elip>
+  </view>
+  <view class='personInfo .fc' >
+    <image src='{{ item.headPortrait }}'></image>
+    <wxc-elip class='name'>{{ item.name}}</wxc-elip>
+  </view>
+  <view class='content fc'>
+     <wxc-elip line="2" class="context">{{ item.content }}</wxc-elip>
+  </view>
+  <!-- 我是分割线 -->
+  <view class='line'></view>
+</view>

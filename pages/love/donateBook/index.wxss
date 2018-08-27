@@ -1,0 +1,59 @@
+/* pages/love/donateBook/index.wxss */
+.tt {
+  width: 678;
+  margin: 33rpx 41rpx;
+  height: 100rpx;
+  color: #333333;
+  opacity: 0.5;
+}
+
+.images {
+  margin: 0 41rpx;
+}
+.images image{
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 21rpx;
+}
+
+.bookNumber {
+  margin-top: 120rpx;
+  font-size: 32rpx;
+}
+.kuaidi{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 31rpx;
+  margin-right: 31rpx;
+  color: #333333;
+}
+
+.footer{
+  margin-top: 200rpx;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200rpx;
+}
+
+.push {
+  width: 250rpx;
+  height: 90rpx;
+  background-color: #FFCD36;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picker{
+  margin: 0 31rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+
+.picker text {
+  margin-left: 480rpx;
+  margin-right: 28rpx;
+}

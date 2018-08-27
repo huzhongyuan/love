@@ -1,0 +1,80 @@
+/* pages/article/articleInfo/index.wxss */
+page{
+  color: #333333;
+}
+.title {
+  font-size: 40rpx;
+  height: 126rpx;
+  display: flex;
+  align-items: center;
+  color: #666666;
+  margin: 0 32rpx;
+}
+/* .title > view {
+  margin-top: 50rpx;
+} */
+.personInfo {
+  margin: 0 40rpx;
+  display: flex;
+  flex-direction: row;
+}
+.headPortrait image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.info {
+  margin: 0 21rpx;
+}
+.time {
+  opacity: 0.7;
+}
+
+.content {
+  color: #666666;
+  font-size: 28rpx;
+  margin: 53rpx 30rpx;
+}
+.footer {
+  position: fixed;
+  width: 750rpx;
+  bottom: 0rpx;
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  color: #000000;
+  border-top: 1rpx solid #cccccc;
+}
+.praise{
+  width: 374rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background:rgba(255,255,255,1);  
+  border-right: 1rpx solid #cccccc;
+}
+.share {
+    width: 375rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background:rgba(255,255,255,1);
+  font-size: 24rpx;
+  border: none;
+}
+.share::after {
+  border: none;
+}
+.praise image {
+  height: 28rpx;
+  width: 27rpx;
+  margin-right: 16rpx;
+}
+.share image {
+  height: 27rpx;
+  width: 26rpx;
+    margin-right: 16rpx;
+}

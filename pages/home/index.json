@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "layout-head": "../../common/layout/head",
+    "layout-foot": "../../common/layout/foot",
+    "articlelist":"/common/articlelist/articlelist",
+    "wxc-elip": "/packages/@minui/wxc-elip/dist/index"
+  }
+}

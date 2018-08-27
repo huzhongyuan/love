@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "wxc-elip": "/packages/@minui/wxc-elip/dist/index",
+    "wxc-button": "/packages/@minui/wxc-button/dist/index",
+    "wxc-dialog": "/packages/@minui/wxc-dialog/dist/index",
+    "blessinglist": "/common/blessinglist/index",
+    "wxc-loadmore": "/packages/@minui/wxc-loadmore/dist/index"
+  },
+  "navigationBarTitleText": "爱心",
+    "window": {
+      "enablePullDownRefresh": true,
+      "onReachBottomDistance": 50
+    }
+}

@@ -1,0 +1,34 @@
+<wxc-popup animation-mode="none" align="center" locked="true" class="popup" _pid="{{_pid}}">
+    <view class="dialog" catchtap="onContentTap">
+        <view class='no'>
+            <wxc-icon size="50" type="no" bindtap="cancelCallback"></wxc-icon>
+        </view>
+        <view class="dialog__title" >
+          <view class='line'></view>
+          <view>捐书要求</view>
+          <view class='line'></view>
+        </view>
+        <view class="dialog__content">
+            <view class='range'>
+              <view class='rangeTitle'>捐书范围</view>
+              <view class='rangeContent'>儿童文学、国内外名著、成语故事、童话故事、习作指南、科幻故事、寓言故事集、小学生作文选、彩色画报、古代名人读书故事集、成语故事</view>
+            </view>
+            <view class='range'>
+              <view class='rangeTitle'>捐书数量</view>
+              <view class='rangeContent'>不限数量自愿捐赠</view>
+            </view>            
+            <view class='range'>
+              <view class='rangeTitle'>捐书地点</view>
+              <view class='rangeContent'>重庆大竹商会办公室（重庆</view>
+            </view>
+            <view class='rangeTitle'>书籍经整理后分批送达大竹</view>
+        </view>
+
+
+        <view class="dialog__btns"> 
+          <view class='black'></view>
+          <view class="dialog__btns--confirm"  bindtap="confirmCallback"><image src='/images/icon/confirm.png'></image></view>
+          <view class="dialog__btns--cancel"  bindtap="cancelCallback">取消</view>
+        </view>
+    </view>
+</wxc-popup>

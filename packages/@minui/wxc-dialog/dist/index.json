@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wxc-popup": "../../wxc-popup/dist/index",
+    "wxc-icon":"/packages/@minui/wxc-icon/dist/index"
+  },
+  "component": true
+}

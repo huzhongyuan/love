@@ -1,0 +1,41 @@
+/* pages/my/index.wxss */
+.header{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 220rpx;
+  background: url('/images/index.png') no-repeat center;
+  background-size: 100% 100%;
+}
+
+.header image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.header view {
+  color: #333333;
+  font-size: 32rpx;
+  margin-top: 29rpx;
+}
+.mydonate{
+  height:100rpx;
+  margin: 0 25rpx;
+}
+
+.mydonate text{
+  color: #333333;
+  font-size: 32rpx;
+}
+.lineyellow {
+  width: 140rpx;
+  height: 4rpx;
+  background-color: #FFCD36;
+  margin-top: 10rpx;
+}
+.line {
+  height: 3rpx;
+  background-color: #cccccc;
+  opacity: 0.5;
+}

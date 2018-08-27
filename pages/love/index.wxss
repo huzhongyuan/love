@@ -1,0 +1,46 @@
+.header {
+  width: 100%;
+  height: 98rpx;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-style: 26rpx;
+}
+.number {
+  color: #FFCD36;
+  font-size: 32rpx;
+  margin: 0 10rpx;
+}
+.personNumber {
+  display: flex;
+  align-items: center;
+}
+.bookNumber{
+  display: flex;
+  align-items: center;
+}
+.donate {
+  height: 172rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.black {
+  width: 150rpx;
+  height: 10rpx;
+}
+.share {
+  background-color: white;
+  font-size: 30rpx;
+  color: #333333;
+  width: 150rpx;
+}
+
+.share::after {
+  border: none;
+}
+.line {
+  width: 750rpx;
+  height: 4rpx;
+  background-color:#cccccc;
+}

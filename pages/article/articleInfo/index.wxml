@@ -1,0 +1,31 @@
+<!--pages/article/articleInfo/index.wxml-->
+<view>
+<view class='title'>
+  <view>{{ articleInfo.title }}</view>
+</view>
+<view class='personInfo'>
+  <view class='headPortrait'>
+    <image src='{{ articleInfo.headPortrait }}'></image>
+  </view>
+  <view class='info'>
+    <view class='name'>{{ articleInfo.name }} </view>
+    <view class='time'> {{ articleInfo.time }}</view>
+  </view>
+</view>
+
+<view class='content'>
+  {{ articleInfo.content }}
+ </view>
+
+
+ <view class='footer'>
+    <view class='praise' bindtap='praise'>
+      <image src='{{ articleInfo.ispraise ? ("/images/icon/onpraise.png"): ("/images/icon/praise.png")}}'></image>
+      <text> {{ articleInfo.praise }}</text>
+    </view>
+    <button class='share' bindtap='share' open-type="share">
+      <image src='/images/icon/share.png'></image>
+      <text open-type='share'>分享</text>
+   </button>
+ </view>
+</view>

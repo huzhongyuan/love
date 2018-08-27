@@ -1,0 +1,89 @@
+.fc {
+  display: flex;
+  align-items: center;
+}
+swiper {
+    height: 240rpx;
+}
+swiper-item image {
+    width: 100%;
+    height: 240rpx;
+}
+.swiper-container{
+  position: relative;
+}
+.swiper-container .swiper{
+  height: 240rpx;
+}
+.swiper-container .swiper .img{
+  width: 100%;
+  height: 240rpx;
+}
+
+.checkmore {
+  justify-content: center;
+  height: 60rpx;
+  width: 100%;
+}
+.fatline {
+  width: 100%;
+  height: 12rpx;
+  background-color: #cccccc;
+  opacity: 0.5;
+}
+.run {
+  width: 100%;
+  height: 80rpx;
+  font-size: 32rpx;
+  margin-left: 24rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.run text{
+  margin-top: 20rpx;
+}
+.line {
+  width: 140rpx;
+  height: 4rpx;
+  background-color: #FFCD36;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 180rpx;
+  margin: 0rpx 29rpx;
+}
+.num {
+  width: 100%;
+  height: 74rpx;
+  color: #FF6136;
+}
+.headPortrait image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.headPortrait{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6rpx;
+}
+.userInfo {
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+}
+ .menber {
+  margin-right: 55rpx;
+} 
+.menber {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  display: flex;
+  width: 71rpx;
+  justify-content: center;
+}

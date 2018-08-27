@@ -1,0 +1,20 @@
+<!--pages/love/donateBook/index.wxml-->
+<textarea class='tt' placeholder='我想说点什么' maxlength="-1" focus="true" bindinput ="userInput"></textarea>
+<view class='images' >
+  <image wx:for="{{ images }}" src='{{ item }}' wx:key="*this" data-index=' {{ index }}' bindtap='remove'></image>
+  <image src='/images/icon/add.png' style='display: {{ (ismax)?"none":"inline-block" }}' bindtap='uploadPhoto'></image>
+</view>
+<view class='bookNumber'>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">捐书数量 <text>{{array[index]}}</text><wxc-icon size="25" type="arrow-right"></wxc-icon>
+    </view>
+  </picker>
+  <view class='kuaidi'>
+  <text>快递单号</text>
+  <wxc-input maxlength="25" style='width:500rpx;'  bind:input="kuaidiInput"></wxc-input>
+  </view>
+</view>
+
+<view class='footer'>
+  <view class='push' bindtap='push'>发布</view>
+</view>

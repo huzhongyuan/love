@@ -1,0 +1,2 @@
+<!--pages/love/donateInfo/index.wxml-->
+<blessinglist articlelist="{{ articlelist }}" share="block" bind:myevent="islove"></blessinglist>

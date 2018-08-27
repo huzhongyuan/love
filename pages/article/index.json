@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "articlelist": "/common/articlelist/articlelist",
+    "wxc-loadmore": "/packages/@minui/wxc-loadmore/dist/index"
+  },
+  "window": {
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  },
+  "navigationBarTitleText": "文章列表"
+}

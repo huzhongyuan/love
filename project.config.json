@@ -1,0 +1,83 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.0",
+	"appid": "wxcda798673143baca",
+	"projectname": "%E7%88%B1%E5%BF%83%E6%8D%90%E8%B5%A0",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": 0,
+					"name": "文章列表(article",
+					"pathName": "pages/article/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "文章详情(article",
+					"pathName": "pages/article/articleInfo/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "爱心",
+					"pathName": "pages/love/index",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "捐书(bookdana",
+					"pathName": "pages/love/donateBook/index",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "捐书详情(donateInfo",
+					"pathName": "pages/love/donateInfo/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的(my",
+					"pathName": "pages/my/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人信息(personalInfo",
+					"pathName": "pages/my/personalInfo/index",
+					"query": ""
+				}
+			]
+		}
+	}
+}

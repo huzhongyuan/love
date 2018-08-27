@@ -1,0 +1,51 @@
+{
+  "pages": [
+     "pages/home/index",
+     "pages/love/index",
+     "common/articlelist/articlelist",
+     "pages/my/index",
+     "pages/article/index",
+     "pages/article/articleInfo/index",
+     "pages/love/donateBook/index",
+     "common/blessinglist/index",
+     "pages/love/donateInfo/index",
+     "pages/my/mydonateInfo/index",
+     "pages/my/personalInfo/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#efefef",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",  
+    "enablePullDownRefresh": true
+  },
+  "networkTimeout": {
+    "request": 10000
+  },
+    "tabBar": {
+      "color": "#666",
+      "selectedColor": "#49ab0a",
+      "position": "bottom",
+      "borderStyle": "white",
+      "list": [
+        {
+          "pagePath": "pages/home/index",
+          "text": "首页",
+          "iconPath": "/images/icon/home.png",
+          "selectedIconPath": "/images/icon/onhome.png"
+        },
+        {
+          "pagePath": "pages/love/index",
+          "text": "爱心",
+          "iconPath": "/images/icon/love.png",
+          "selectedIconPath": "/images/icon/onlove.png"
+        },
+        {
+          "pagePath": "pages/my/index",
+          "text": "我的",
+          "iconPath": "/images/icon/my.png",
+          "selectedIconPath": "/images/icon/onmy.png"
+        }
+      ]
+    }
+}

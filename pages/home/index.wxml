@@ -1,0 +1,38 @@
+<!-- 轮播图 -->
+<view class="swiper-container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">
+    <block wx:for="{{imgUrls}}" wx:key="unique" id="{{ item.id }}" data-index = "{{ index }}">
+      <swiper-item>
+        <image src="{{item}}" class="img" bindtap="swipclick" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 文章列表 -->
+<articlelist articlelist="{{ articlelist }}"  bind:to_detail="to_detail"></articlelist>
+
+<!-- 查看更多 -->
+<view class='checkmore fc' bindtap='checkmore'>
+  <text>查看更多></text>
+</view>
+
+<!-- 我是分割线 -->
+<view class='fatline'></view>
+
+<view class='run'>
+  <text>他们在行动</text>
+  <view class='line'></view>
+</view>
+
+<view class='footer'>
+  <view class='num fc'><wxc-elip >已经有{{ menber }}人捐书</wxc-elip></view>
+  <wxc-elip>
+    <view class='userInfo fc'>
+      <view class='menber' wx:for="{{ menberlist }}"wx:key="unique" id='{{item.id}}' data-index="{{ index }}">
+        <view class='headPortrait fc'><image src='{{ item.headPortrait }}'></image></view>
+        <wxc-elip class='name'>{{ item.name }}</wxc-elip>
+      </view>
+  </view>
+  </wxc-elip>
+</view>

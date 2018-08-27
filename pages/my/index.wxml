@@ -1,0 +1,13 @@
+<!--pages/my/index.wxml-->
+<view  class='header'>
+    <image src='{{ userInfo.avatarUrl }}' bindtap='to_personal'></image>
+    <view>{{ userInfo.nickName }}</view>
+</view>
+
+<view class='mydonate'>
+  <text>我捐过的书</text>
+  <view class='lineyellow'></view>
+</view>
+<view class='line'></view>
+
+<blessinglist articlelist="{{ articlelist }}" share="block" bind:myevent="islove" bind:donateBook="donateBook"></blessinglist>
