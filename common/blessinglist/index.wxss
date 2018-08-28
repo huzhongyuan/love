@@ -111,6 +111,7 @@
   height: 80rpx;
   font-size: 26rpx;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: white;

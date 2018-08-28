@@ -19,7 +19,7 @@
 .nogetuser button{
   border: none;
   color: white;
-  background-color: green;
+  background-color: yellow;
   padding: 20rpx;
   margin: 0rpx;
   border-radius:100%;

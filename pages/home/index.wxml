@@ -13,7 +13,7 @@
 <articlelist articlelist="{{ articlelist }}"  bind:to_detail="to_detail"></articlelist>
 
 <!-- 查看更多 -->
-<view class='checkmore fc' bindtap='checkmore'>
+<view class='checkmore fc' bindtap='checkmore' wx:if="articlelist">
   <text>查看更多></text>
 </view>
 

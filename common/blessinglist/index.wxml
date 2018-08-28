@@ -25,7 +25,8 @@
     <view class='sharing'>
         <button hover-stop-propagation='true' open-type='share' style='display: {{ share }};z-index: 1'>
         <image src='/images/icon/share.png'></image>
-        分享</button>
+        分享
+        </button>
     </view>
     <view class='collect' catchtap='love' id='{{ item.id }}' data-index="{{ index }}">
     <wxc-elip class="collectbox">
